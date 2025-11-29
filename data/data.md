@@ -4,6 +4,7 @@
 
 - [Tech Info](techinfo/techinfo.md)
 - [Tips](tips/tips.md)
+- [Career](career/career.md)
 
 ## Files
 
