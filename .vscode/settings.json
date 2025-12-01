@@ -22,5 +22,13 @@
 	"[jsonc]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"notebook.defaultFormatter": "esbenp.prettier-vscode"
+	"notebook.defaultFormatter": "esbenp.prettier-vscode",
+	"window.autoDetectColorScheme": false,
+	"workbench.editor.autoLockGroups": {
+		"workbench.editor.chatSession": false,
+		"mainThreadWebview-simpleBrowser.view": false
+	},
+	"workbench.editor.alwaysShowEditorActions": true,
+	"workbench.editor.customLabels.enabled": false,
+	"markdown.extension.preview.autoShowPreviewToSide": true
 }
