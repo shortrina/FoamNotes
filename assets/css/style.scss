@@ -72,3 +72,41 @@ blockquote {
   color: black;
   border-radius: 4px;
 }
+
+/* Admonition Text Blocks Styling */
+.admonition {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+
+  p {
+    margin: 0;
+  }
+
+  /* Specific styles for different types */
+  &.note {
+    border-color: #2196F3;
+    /* Blue */
+    background-color: #e3f2fd;
+  }
+
+  &.tip {
+    border-color: #4CAF50;
+    /* Green */
+    background-color: #e8f5e9;
+  }
+
+  &.warning {
+    border-color: #FFEB3B;
+    /* Yellow */
+    background-color: #fffde7;
+  }
+
+  &.caution {
+    border-color: #f44336;
+    /* Red */
+    background-color: #ffebee;
+  }
+}
