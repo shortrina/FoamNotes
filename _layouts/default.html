@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+</head>
+<body>
+
+  <aside id="site-sidebar">
+    <h3><a href="{{ "/" | relative_url }}" style="color: inherit; text-decoration: none;">Documents</a></h3>
+    <ul>
+      {% for p in site.pages %}
+        {% if p.title %}
+          <li>
+            <a href="{{ p.url | relative_url }}" {% if p.url == page.url %}style="font-weight: bold;"{% endif %}>
+              {{ p.title }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </aside>
+
+  <div class="markdown-body">
+    {{ content }}
+  </div>
+
+</body>
+</html>

@@ -87,19 +87,19 @@ blockquote {
 
   /* Specific styles for different types */
   &.note {
-    border-color: #2196F3;
+    border-color: #2196f3;
     /* Blue */
     background-color: #e3f2fd;
   }
 
   &.tip {
-    border-color: #4CAF50;
+    border-color: #4caf50;
     /* Green */
     background-color: #e8f5e9;
   }
 
   &.warning {
-    border-color: #FFEB3B;
+    border-color: #ffeb3b;
     /* Yellow */
     background-color: #fffde7;
   }
@@ -109,4 +109,72 @@ blockquote {
     /* Red */
     background-color: #ffebee;
   }
+}
+
+/* User Request: Syntaxes to point out text */
+mark {
+  background-color: #ffee58;
+  color: #212121;
+  padding: 0 4px;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+/* User Request: Make visible document pages (Sidebar) */
+body {
+  display: flex; /* Flex container for Sidebar + Content */
+  margin: 0;
+  min-height: 100vh;
+}
+
+#site-sidebar {
+  width: 260px;
+  background-color: #f6f8fa;
+  border-right: 1px solid #d1d5da;
+  padding: 24px;
+  overflow-y: auto;
+  flex-shrink: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif;
+}
+
+#site-sidebar h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #24292e;
+}
+
+#site-sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#site-sidebar li {
+  margin-bottom: 8px;
+}
+
+#site-sidebar a {
+  text-decoration: none;
+  color: #0366d6;
+  font-size: 0.95em;
+}
+
+
+#site-sidebar a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body {
+  /* Ensure content takes remaining space but has max width for readability */
+  flex-grow: 1;
+  padding: 40px;
+  max-width: 900px;
+  box-sizing: border-box;
+}
+
+/* User Request: Syntaxes to point out text (Underline) */
+u, .underline {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px; /* Optional: Make it slightly thicker */
+  text-underline-offset: 2px; /* Optional: standard spacing */
 }
