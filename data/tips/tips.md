@@ -1,5 +1,5 @@
-# Tips
+# 📌 Tips
 
-## Files
+## Categories
 
 <!-- Add files here -->
