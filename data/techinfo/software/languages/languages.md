@@ -3,6 +3,7 @@
 ## 📁 Subdirectories
 
 - [Script Languages](script-languages/script-languages.md)
+- [Script Engine and Platforms](script-languages/script-engines-and-platform)
 - [System Languages](system-languages/system-languages.md)
 - [Web Languages](web-languages/web-languages.md)
 
