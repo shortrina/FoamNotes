@@ -1,3 +1,4 @@
 guiding/
 .vscode
 .foam
+node_modules/
